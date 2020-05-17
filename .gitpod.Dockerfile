@@ -6,11 +6,12 @@ RUN apt-get autoremove -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
+RUN mkdir /home/gitpod
+
 RUN cd /home/gitpod && \
     curl -O https://storage.googleapis.com/dart-archive/channels/beta/release/2.9.0-8.2.beta/sdk/dartsdk-linux-x64-release.zip && \
     unzip dartsdk-linux-x64-release.zip
 
-RUN mkdir /home/gitpod
 WORKDIR /home/gitpod
 
 ENV PUB_CACHE=/home/gitpod/.pub_cache
