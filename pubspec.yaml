@@ -1,0 +1,6 @@
+name: my_first_project
+
+dependencies:
+  http: ^0.12.1
+  hive: ^1.4.1+1
+  angel_framework: ^2.1.1

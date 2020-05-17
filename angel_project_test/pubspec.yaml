@@ -1,0 +1,4 @@
+name: angel_server_test
+
+dependencies:
+  angel_framework: ^2.1.1
